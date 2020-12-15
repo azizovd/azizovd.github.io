@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Montserrat';
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+}
+.screen{
+    background: url('images/header-bg.jpg') no-repeat;
+    background-size: cover;
+    height: 60rem;
+}
+.header-logo a{
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 80px;
+    font-size: 35px;
+}
+.header-logo{
+    padding: 75px 0 0 0;
+}
+.header-nav a{
+    color: #fff;
+    padding: 10px;
+}
+.header-nav a:hover{
+    border-bottom: 3px solid rgb(218, 180, 13);
+}
+.header-nav .icon{
+    display: none;
+}
+nav{
+    display: flex;
+    padding: 75px 0 0 0;
+    margin-left: 50%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main-welcome{
+    width: 100%;
+    height: 100px;
+    padding: 15rem  0 25rem 0;
+    text-align: center;
+}
+.main-welcome h1{
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Montserrat';
+}
+.line{
+    position: relative;
+    margin: 0 0 20px 0;
+    left: 45.5%;
+    background: #E8C300;
+    border-radius: 50px;
+    width: 60px;
+    height: 3px;
+}
+.main-welcome p{
+    color: #fff;
+    font-size: 20px;
+}
+span#hungry{
+    color: #fcac58;
+}
+.buttons{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+}
+.button{
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    width: 200px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background: #E8C300;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+.button:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+.button2{
+    transition: 0.5s;
+    margin-left: 4rem;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    width: 200px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+.button2:hover{
+    transition: 0.5s;
+    background: #E8C300;
+    border: none;
+    transform: scale(1.2);
+}
+.wrapper{
+    width: 76%;
+    margin: 0 auto;
+}
+main .main-about{
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+.about-left{
+    margin-top: 8rem;
+    margin-right: 14rem;
+}
+.about-left h1{
+    display: inline-block;
+    border-bottom: 3px solid #E8C300;
+    padding-bottom: 20px;
+}
+.about-left p{
+    font-weight: bolder;
+    margin: 30px 0 50px 0;
+}
+.about-left span{
+    font-weight: lighter;
+}
+.main-team{
+    display: flex;
+    flex-direction: row;
+    background: url('images/specialtys-bg.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 40rem;
+}
+.team-left img{
+    float: left;
+}
+.team-right{
+    margin-top: 8rem;
+    margin-left: 14rem;
+}
+.team-right h1{
+    color: #fff;
+    display: inline-block;
+    border-bottom: 3px solid #E8C300;
+    padding-bottom: 20px;
+}
+.team-right p{
+    color: #fff;
+    font-weight: bolder;
+    margin: 30px 0 50px 0;
+    width: 76%;
+}
+.team-right span{
+    color: #fff;
+    font-weight: lighter;
+}
+.main-book{
+    display: flex;
+}
+.book-left h1{
+    display: inline-block;
+    border-bottom: 3px solid #E8C300;
+    padding-bottom: 20px;
+}
+.book-left{
+    margin-top: 8rem;
+}
+.book-right img{
+    float: right;
+}
+.book-left form{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.book-left input{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 20px;
+    margin-left: 15px;
+    width: 277px;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.book-left button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 563px;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 60px;
+    background: #E8C300;
+    border-radius: 5px;
+}
+.book-left select{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 20px;
+    margin-left: 15px;
+    width: 277px;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.main-food{
+    display: flex;
+    width: 100%;
+    height: 39rem;
+    background: url('images/specialtys-bg (1).jpg') no-repeat;
+    background-size: cover;
+}
+.food-right h1{
+    color: #fff;
+    display: inline-block;
+    border-bottom: 3px solid #E8C300;
+    padding-bottom: 20px;
+}
+.food-right p{
+    color: #fff;
+    font-weight: bolder;
+    margin: 30px 0 50px 0;
+    width: 76%;
+}
+.food-right span{
+    color: #fff;
+    font-weight: lighter;
+}
+.food-right{
+    margin-top: 8rem;
+    margin-left: 14rem;
+}
+.main-delicious{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.main-delicious h1{
+    margin-top: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+.main-delicious p{
+    align-self: center;
+    display: flex;
+    font-weight: 800;
+    width: 450px;
+}
+.delicious-nav{
+    margin-top: 5rem;
+    align-self: center;
+}
+.delicious-nav a{
+    color: #000000;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 20px 30px 20px 30px;
+}
+.delicious-nav a:hover{
+    background-color: rgba(255, 174, 0, 0.74);
+}
+.delicious-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 5rem;
+    padding-bottom: 5rem;
+}
+.delicious-food{
+    margin-top: 6.8rem;
+}
+.delicious-food h2{
+    text-align: left;
+    font-size: 17px;
+}
+.delicious-food p{
+    font-size: 12px;
+}
+.blocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.main-events{
+    display: flex;
+    background: url('images/specialtys-bg (1).jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.main-events p{
+    padding: 20px;
+    align-self: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    border-radius: 5px;
+}
+.main-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-gallery img{
+    width: 381px;
+    height: 381px;
+}
+.main-contacts{
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
+.main-contacts h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-contacts p{
+    text-align: center;
+    font-weight: bolder;
+    line-height: 10px;
+    margin-bottom: 50px;
+}
+.main-contacts form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-contacts input{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 350px;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    text-indent: 20px;
+}
+.main-contacts button{
+    cursor: pointer;
+    background: #E8C300;
+    border-radius: 5px;
+    width: 640px;
+    height: 60px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100px;
+}
+footer p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.699);
+    border-radius: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 1568px){
+    nav{
+        margin-left: 45%;
+    }
+    .main-gallery img{
+        width: 290px;
+        height: 290px;
+    }
+}
+@media screen and (max-width: 1425px){
+    nav{
+        margin-left: 37%;
+    }
+    .main-gallery img{
+        width: 270px;
+        height: 270px;
+    }
+}
+@media screen and (max-width: 1244px){
+    .header-nav a{
+        display: none;
+    }
+    nav{
+        width: 100%;
+    }
+    .header-nav{
+        height: 100px;
+        margin-left: 80%;
+    }
+    .header-nav a.icon{
+        margin-top: -17px;
+        display: block;
+        font-size: 25px;
+    }
+    .header-nav.responsive{
+        position: relative;
+        top: 150px;
+        right: 32rem;
+    }
+    header .header-nav.responsive{
+        height: 340px;
+    }
+    .header-nav.responsive a{
+        display: block;
+        width: 10rem;
+        text-align: center;
+    }
+    .main-about{
+        flex-direction: column;
+    }
+    .about-left{
+        margin-left: 12rem;
+        width: 30rem;
+    }
+    .about-right img{
+        width: 400px;
+        margin-left: 12rem;
+    }
+    .main-team{
+        flex-direction: column;
+    }
+    .team-right{
+        margin-top: auto;
+        margin-left: 22rem;
+        width: 40rem;
+    }
+    .team-left img{
+        width: 400px;
+        margin-left: 19.5rem;
+    }
+    .main-book{
+        flex-direction: column;
+    }
+    .book-left{
+        margin-left: 13rem;
+    }
+    .book-right img{
+        margin-right: 7.5rem;
+        width: 400px;
+    }
+    .main-food{
+        flex-direction: column;
+    }
+    .food-right p{
+        width: 35rem;
+    }
+    .food-right{
+        margin-top: -1rem;
+        margin-left: 20rem;
+        width: 40rem;
+    }
+    .food-left img{
+        width: 400px;
+        margin-left: 19.5rem;
+    }
+    .book-left form{
+        flex-direction: row;
+    }
+    .book-left input{
+        flex-basis: 100px;
+    }
+    .book-left select{
+        flex-basis: 185px;
+    }
+    .book-left button{
+        width: 300px;
+        margin-left: 3.5rem;
+    }
+    .delicious-nav a{
+        font-size: 15px;
+        margin-left: 5px;
+        padding: 0;
+    }
+    .delicious-food{
+        margin-left: 8rem;
+    }
+    .blocks{
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-gallery img{
+        width: 190px;
+        height: 190px;
+    }
+}

@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html, body{
+  font-size: 15px;
+  font-family: 'Montserrat';
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #232323;
+}
+::-webkit-scrollbar-thumb{
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+.section-header{
+  display: flex;
+  flex-direction: column;
+  background: #232323;
+  height: 100vh;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+.elements{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.element{
+  position: relative;
+  color: #ffffff;
+  margin-right: 35px;
+}
+.element:after{
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  transition: .3s;
+}
+.element:hover:after{
+  width: 0;
+}
+.logo{
+  position: relative;
+}
+.bg-text{
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #ffffff04;
+  font-size: 10.5rem;
+  text-align: center;
+  text-shadow: 0 0 35px rgba(0, 0, 0, 0.329);
+  word-spacing: 3rem;
+}
+.login{
+  font-weight: bolder;
+  color: #135ec5;
+  background: #ffffff;
+  margin-right: 80px;
+  padding: 20px 35px;
+  border-radius: 5rem;
+  transition: .3s;
+  position: relative;
+}
+.car{
+  position: absolute;
+  top: 47%;
+  left: 49%;
+  width: 38%;
+  transform: translate(-50%, -50%);
+}
+.login:hover{
+  box-shadow: 0 0 20px #86a6d6;
+}
+.header-content{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-text{
+  color: #ffffff;
+}
+.search{
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-form{
+  margin-top: 50px;
+}
+.search-input{
+  margin-left: 70px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  border-bottom: 1px solid #3c3c3c;
+  width: 300px;
+  position: relative;
+  color: #ffffff;
+}
+.button{
+  text-align: left;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background: #135ec5;
+  color: #ffffff;
+  font-weight: bolder;
+  transition: .3s;
+  font-size: 1.05rem;
+}
+.button:hover{
+  box-shadow: 0 0 20px #277ffc;
+}
+/* Main block */
+.section-models{
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  color: #c1c1c1;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.models{
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: 80px auto;
+  justify-content: space-between;
+}
+.model{
+  transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 50%;
+}
+.model:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #2323235d;
+}
+.info{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.right{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.title{
+  font-size: 3rem;
+  color: #135ec5;
+  font-weight: bolder;
+}
+.subtitle{
+  color: #c1c1c1;
+}
+.bmw-car{
+  padding-right: 100px;
+}
+section{
+  margin-top: 10rem;
+}
+.section-order{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.order-content{
+  background: #135ec5;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.title-order{
+  color: #ffffff;
+  margin-top: 80px;
+  font-size: 3rem;
+}
+.button-add{
+  width: 200px;
+  border: 2px solid #ffffff;
+  padding: 10px 35px;
+  border-radius: 30px;
+  color: #ffffff;
+  transition: .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.button-add:hover{
+  background: #ffffff;
+  color: #000000;
+}
+.ad{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.card{
+  text-align: center;
+  transition: .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background: #1d6ad4;
+  padding: 140px 40px;
+}
+.order-model{
+  color: #ffffff;
+}
+.order-info{
+  color: #c3c3c3;
+}
+.card:hover{
+  transform: scale(.9);
+}
+.footer{
+  margin-top: 10rem;
+  padding: 20px;
+  background: #232323;
+}
+.footer-text{
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+
+
+@media screen and (max-width: 1205px){
+  .info{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

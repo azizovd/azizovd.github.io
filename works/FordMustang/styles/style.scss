@@ -1,0 +1,103 @@
+@import 'normalize.scss';
+
+body{
+  background: url('../images/2019-ford-f-150-raptor-first-drive_1.jpg') no-repeat;
+  background-size: cover;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 53px;
+  &-burgermenu{
+    display: flex;
+    flex-direction: column;
+    transform: scale(-1, 1);
+    &:hover &__burger1{
+      width: 45px;
+      transition: 0.5s;
+    }
+    &:not(:hover) &__burger1{
+      transition: 0.5s;
+    }
+    &__burger{
+      margin-top: 5px;
+      width: 45px;
+      height: 6px;
+      background: #ffffff;
+      border-radius: 10px;
+    }
+    &__burger1{
+      margin-top: 5px;
+      width: 35px;
+      height: 6px;
+      background: #ffffff;
+      border-radius: 10px;
+    }
+  }
+}
+
+.section-content{
+  display: flex;
+  height: 65vh;
+  justify-content: center;
+  flex-direction: column;
+  &-text{
+    margin-left: 24vh;
+    width: 297px;
+    height: 114px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 70px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+.section-button{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  height: 5vh;
+  &__item{
+    margin: 10vh;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: flex;
+    width: 157px;
+    height: 37px;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    transition: 0.5s;
+  }
+  &__item:hover{
+    text-decoration: underline;
+    border-color: rgba(219, 191, 113, 0.726);
+    color: rgba(219, 191, 113, 0.726);
+    margin-top: 0;
+    transition: 0.5s;
+  }
+  &__arrow{
+    display: flex;
+    align-items: center;
+  }
+}
